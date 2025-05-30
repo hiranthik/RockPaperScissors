@@ -185,9 +185,11 @@ public class RockPaperScissor{
         }
         else if(computerChoice.equals("rock")&&playerChoice.equals("paper")||computerChoice.equals("paper")&&playerChoice.equals("scissors")||computerChoice.equals("scissors")&&playerChoice.equals("rock")){
             result = "you win!!";
+            playerScore++;
         }
         else{
-            result = "computer wins!! you lose :<";
+            result = "computer wins!!";
+            computerScore++;
         }
         return result;
 

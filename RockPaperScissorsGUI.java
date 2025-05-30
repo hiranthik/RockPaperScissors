@@ -13,11 +13,12 @@ public class RockPaperScissorsGUI extends JFrame implements ActionListener {
 
     public RockPaperScissorsGUI(){
         setTitle("Rock-Paper-Scissor-Game");
-        setSize(450,450);
+        setSize(450,550);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         rockPaperScissor = new RockPaperScissor();
+        addGUIcomponents();
 
     }
 
@@ -41,7 +42,7 @@ public class RockPaperScissorsGUI extends JFrame implements ActionListener {
         computerChoice.setHorizontalAlignment(SwingConstants.CENTER);
         add(computerChoice);
 
-        rockButton = new JButton("Rock");
+        rockButton = new JButton("rock");
         rockButton.setBounds(40, 387, 105, 81);
         rockButton.setFont(new Font("Dialog",Font.BOLD,18));
         rockButton.setHorizontalAlignment(SwingConstants.CENTER);
@@ -49,7 +50,7 @@ public class RockPaperScissorsGUI extends JFrame implements ActionListener {
         add(rockButton);
 
 
-        paperButton = new JButton("Paper");
+        paperButton = new JButton("paper");
         paperButton.setBounds(165, 387, 105, 81);
         paperButton.setFont(new Font("Dialog",Font.BOLD,18));
         paperButton.setHorizontalAlignment(SwingConstants.CENTER);
